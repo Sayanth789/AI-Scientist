@@ -56,7 +56,7 @@ def run_md(run_id, dataset, steps=10000, temp=310):
     init_conf = read(dataset+'/'+dataset+'_i.xyz')
     init_conf.set_calculator(calculator)
     
-    print ("run optinization")
+    print ("run optimization")
     opt = BFGS(init_conf)
     opt.run(fmax=0.01)
 
